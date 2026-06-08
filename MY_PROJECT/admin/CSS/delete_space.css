@@ -1,0 +1,186 @@
+/* ===== RESET ===== */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body
+{
+    margin: 0;
+    font-family: Arial;
+    background: #f4f4f4;
+    color: black;
+    padding: 20px;
+}
+
+/* ===== PAGE TITLE ===== */
+h2
+{
+    text-align: center;
+    color: #0b3d2e;
+    margin: 15px 0;
+}
+
+/* ===== MAIN BUTTON LINKS ===== */
+a button
+{
+    padding: 10px 15px;
+    margin: 10px 0;
+
+    background: #0b3d2e;
+    color: white;
+
+    border: none;
+    border-radius: 4px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+a button:hover
+{
+    background: #145a3a;
+}
+
+/* ===== ITEM BOX (BOXES / CLASSES) ===== */
+.item-box
+{
+    width: 90%;
+    max-width: 900px;
+
+    margin: 10px auto;
+    padding: 15px;
+
+    background: white;
+    border: 2px solid #0b3d2e;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* ===== BUTTONS INSIDE ITEM BOX ===== */
+.item-box button
+{
+    padding: 8px 12px;
+
+    border: none;
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+/* delete button (red like your old style but cleaner) */
+.item-box button[style*="red"]
+{
+    background: #b02a2a;
+    color: white;
+}
+
+.item-box button[style*="red"]:hover
+{
+    background: #8b1f1f;
+}
+
+/* normal buttons */
+.item-box button:not([style*="red"])
+{
+    background: #0b3d2e;
+    color: white;
+}
+
+.item-box button:not([style*="red"]):hover
+{
+    background: #145a3a;
+}
+
+/* ===== TABLE (STUDENTS) ===== */
+table
+{
+    width: 90%;
+    max-width: 900px;
+
+    margin: 20px auto;
+
+    border-collapse: collapse;
+    background: white;
+    border: 2px solid #0b3d2e;
+}
+
+td
+{
+    padding: 10px;
+    text-align: center;
+
+    border: 1px solid #ccc;
+}
+
+/* ===== IMAGE ===== */
+td img
+{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+
+    border: 2px solid #0b3d2e;
+}
+
+/* ===== TABLE ACTION BUTTONS ===== */
+td button
+{
+    padding: 6px 10px;
+
+    border: none;
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+/* delete in table */
+td button[style*="red"]
+{
+    background: #b02a2a;
+    color: white;
+}
+
+td button[style*="red"]:hover
+{
+    background: #8b1f1f;
+}
+
+/* update buttons */
+td button:not([style*="red"])
+{
+    background: #0b3d2e;
+    color: white;
+}
+
+td button:not([style*="red"]):hover
+{
+    background: #145a3a;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px)
+{
+    .item-box
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    table
+    {
+        font-size: 14px;
+    }
+
+    td img
+    {
+        width: 40px;
+        height: 40px;
+    }
+}

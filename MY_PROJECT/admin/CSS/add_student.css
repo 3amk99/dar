@@ -1,0 +1,179 @@
+/* ===== RESET ===== */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body
+{
+    margin: 0;
+    font-family: Arial;
+    background: #f4f4f4;
+    color: black;
+}
+
+/* ===== MAIN PAGE WRAPPER ===== */
+#page
+{
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+
+    background: white;
+    padding: 20px;
+
+    border: 2px solid #0b3d2e;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* ===== FORM ===== */
+#student-form
+{
+    width: 100%;
+    max-width: 420px;
+
+    background: white;
+    padding: 20px;
+
+    border: 2px solid #0b3d2e;
+    border-radius: 4px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+/* ===== TITLE INPUTS ===== */
+#input-name,
+#select-class
+{
+    padding: 12px;
+
+    border: 1px solid #0b3d2e;
+    border-radius: 4px;
+
+    background: white;
+    color: black;
+
+    outline: none;
+}
+
+
+
+
+
+#input-photo
+{
+    display: none;
+}
+.custom-file-btn
+{
+    display: inline-block;
+
+    padding: 10px 15px;
+    background: #0b3d2e;
+    color: white;
+
+    border-radius: 4px;
+    cursor: pointer;
+
+    transition: 0.3s;
+    font-family: Arial;
+}
+
+
+
+
+.custom-file-btn:hover
+{
+    background: #145a3a;
+}
+
+
+
+
+/* focus effect */
+#input-name:focus,
+#select-class:focus
+{
+    border: 2px solid #145a3a;
+}
+
+/* ===== BUTTON ===== */
+#btn-add
+{
+    padding: 10px 15px;
+    margin: 5px;
+
+    background: #0b3d2e;
+    color: white;
+
+    border: none;
+    border-radius: 4px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btn-add:hover
+{
+    background: #145a3a;
+}
+
+/* ===== RETURN BUTTON ===== */
+#btn-return
+{
+    display: inline-block;
+    padding: 10px 15px;
+
+    border: 1px solid #0b3d2e;
+    color: #0b3d2e;
+
+    text-decoration: none;
+    border-radius: 4px;
+
+    transition: 0.3s;
+}
+
+#btn-return:hover
+{
+    background: #0b3d2e;
+    color: white;
+}
+
+/* ===== SUCCESS MESSAGE ===== */
+#success-message
+{
+    background: #0b3d2e;
+    color: white;
+
+    padding: 10px 15px;
+    border-radius: 4px;
+
+    text-align: center;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px)
+{
+    #page
+    {
+        width: 95%;
+        padding: 15px;
+    }
+
+    #input-name,
+    #input-photo,
+    #select-class,
+    #btn-add
+    {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body
+{
+    margin: 0;
+    font-family: Arial;
+    background: #f4f4f4;
+    color: black;
+}
+
+/* ===== MAIN CONTAINER ===== */
+#container
+{
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+
+    background: white;
+    padding: 20px;
+
+    border: 2px solid #0b3d2e;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* ===== FORM BOX ===== */
+#box-form
+{
+    width: 100%;
+    max-width: 400px;
+
+    background: white;
+    padding: 20px;
+
+    border: 2px solid #0b3d2e;
+    border-radius: 4px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+/* ===== TITLE ===== */
+#title
+{
+    text-align: center;
+    color: #0b3d2e;
+}
+
+/* ===== INPUT ===== */
+#box-name
+{
+    padding: 12px;
+
+    border: 1px solid #0b3d2e;
+    border-radius: 4px;
+
+    background: white;
+    color: black;
+
+    outline: none;
+}
+
+#box-name:focus
+{
+    border: 2px solid #145a3a;
+}
+
+/* ===== BUTTON ===== */
+#add-button
+{
+    padding: 10px 15px;
+    margin: 5px;
+
+    background: #0b3d2e;
+    color: white;
+
+    border: none;
+    border-radius: 4px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#add-button:hover
+{
+    background: #145a3a;
+}
+
+/* ===== RETURN LINK ===== */
+#return-link
+{
+    display: inline-block;
+    padding: 10px 15px;
+
+    border: 1px solid #0b3d2e;
+    color: #0b3d2e;
+
+    text-decoration: none;
+    border-radius: 4px;
+
+    transition: 0.3s;
+}
+
+#return-link:hover
+{
+    background: #0b3d2e;
+    color: white;
+}
+
+/* ===== SUCCESS MESSAGE ===== */
+#success-message
+{
+    background: #0b3d2e;
+    color: white;
+
+    padding: 10px 15px;
+    border-radius: 4px;
+
+    text-align: center;
+}
+
+/* ===== PHONE ONLY ===== */
+@media (max-width: 600px)
+{
+    #container
+    {
+        width: 100%;
+        margin: 0;
+        padding: 15px;
+        border: none;
+    }
+
+    #box-form
+    {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    #box-name
+    {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    #add-button
+    {
+        width: 100%;
+        margin: 0;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    #return-link
+    {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    #title
+    {
+        font-size: 24px;
+    }
+
+    #success-message
+    {
+        width: 100%;
+    }
+}

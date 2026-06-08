@@ -1,0 +1,168 @@
+/* ===== RESET ===== */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body
+{
+    margin: 0;
+    font-family: Arial;
+    background: #f4f4f4;
+    color: black;
+    padding: 20px;
+}
+
+/* ===== PAGE TITLE ===== */
+h2
+{
+    text-align: center;
+    color: #0b3d2e;
+    margin-bottom: 10px;
+}
+
+/* ===== DESCRIPTION TEXT ===== */
+p
+{
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* ===== STUDENT CARD ===== */
+.student-bar
+{
+    width: 90%;
+    max-width: 900px;
+
+    margin: 15px auto;
+    padding: 15px;
+
+    background: white;
+    border: 2px solid #0b3d2e;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* ===== IMAGE ===== */
+.student-bar img
+{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+
+    border: 2px solid #0b3d2e;
+}
+
+/* ===== STUDENT INFO ===== */
+.student-info
+{
+    flex: 1;
+}
+
+/* ===== TEXT INSIDE CARD ===== */
+.student-info h3
+{
+    color: #0b3d2e;
+    margin-bottom: 5px;
+}
+
+.student-info p
+{
+    text-align: left;
+    margin: 3px 0;
+    color: #333;
+}
+
+/* ===== BUTTONS INSIDE CARD ===== */
+.student-info button
+{
+    padding: 8px 12px;
+    margin-top: 8px;
+
+    border: none;
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+/* Statistics button */
+.student-info a button
+{
+    background: #0b3d2e;
+    color: white;
+}
+
+.student-info a button:hover
+{
+    background: #145a3a;
+}
+
+/* Remove flag button */
+.clear-flag-btn
+{
+    background: #b02a2a;
+    color: white;
+}
+
+.clear-flag-btn:hover
+{
+    background: #8b1f1f;
+}
+
+/* ===== BACK BUTTON ===== */
+a button
+{
+    display: block;
+    margin: 30px auto;
+
+    padding: 10px 15px;
+
+    background: #0b3d2e;
+    color: white;
+
+    border: none;
+    border-radius: 4px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+a button:hover
+{
+    background: #145a3a;
+}
+
+/* ===== EMPTY MESSAGE ===== */
+body > p:last-of-type
+{
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px)
+{
+    .student-bar
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .student-bar img
+    {
+        width: 70px;
+        height: 70px;
+    }
+
+    .student-info p
+    {
+        text-align: center;
+    }
+}

@@ -1,0 +1,164 @@
+/* ===== RESET ===== */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body
+{
+    margin: 0;
+    font-family: Arial;
+    background: #f4f4f4;
+    color: black;
+}
+
+/* ===== MAIN PAGE ===== */
+#page
+{
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+
+    background: white;
+    padding: 20px;
+
+    border: 2px solid #0b3d2e;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ===== TITLE ===== */
+#title
+{
+    text-align: center;
+    color: #0b3d2e;
+}
+
+/* ===== BACK LINK ===== */
+#back-link
+{
+    display: inline-block;
+    padding: 10px 15px;
+
+    border: 1px solid #0b3d2e;
+    color: #0b3d2e;
+
+    text-decoration: none;
+    border-radius: 4px;
+
+    transition: 0.3s;
+}
+
+#back-link:hover
+{
+    background: #0b3d2e;
+    color: white;
+}
+
+/* ===== USER SELECT FORM ===== */
+#user-select-form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+}
+
+#user-select
+{
+    padding: 10px;
+
+    border: 1px solid #0b3d2e;
+    border-radius: 4px;
+
+    background: white;
+    color: black;
+}
+
+/* ===== ASSIGN FORM ===== */
+#assign-form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* ===== CLASS LIST BOX ===== */
+#class-list
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+
+    padding: 10px;
+    border: 1px solid #0b3d2e;
+    border-radius: 4px;
+}
+
+/* ===== CLASS ITEM ===== */
+.class-item
+{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 8px;
+
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    background: white;
+}
+
+/* ===== SAVE BUTTON ===== */
+#save-btn
+{
+    padding: 10px 15px;
+
+    background: #0b3d2e;
+    color: white;
+
+    border: none;
+    border-radius: 4px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#save-btn:hover
+{
+    background: #145a3a;
+}
+
+/* ===== HINT TEXT ===== */
+#hint
+{
+    text-align: center;
+    color: #333;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px)
+{
+    #page
+    {
+        width: 95%;
+        padding: 15px;
+    }
+
+    #user-select-form
+    {
+        flex-direction: column;
+    }
+
+    #class-list
+    {
+        grid-template-columns: 1fr;
+    }
+}
